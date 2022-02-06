@@ -7,7 +7,7 @@ const client = new Client({
 	],
 	partials: ["MESSAGE", "REACTION", "USER"],
 });
-const { token } = require("../config.json");
+const { token } = require(process.argv[2] || "../config.json");
 const Paginator = require("./paginator");
 
 const snipes = {};
