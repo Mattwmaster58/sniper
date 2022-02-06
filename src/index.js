@@ -10,9 +10,9 @@ const client = new Client({
 const { token } = require(process.argv[2] || "../config.json");
 const Paginator = require("./paginator");
 
-const snipes = {};
-const editSnipes = {};
-const reactionSnipes = {};
+const snipes = [];
+const editSnipes = [{}];
+const reactionSnipes = [{}];
 
 const formatEmoji = (emoji) => {
 	return !emoji.id || emoji.available
