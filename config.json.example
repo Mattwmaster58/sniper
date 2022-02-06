@@ -1,4 +1,6 @@
 {
 	"token": "",
-	"application_id": ""
+	"application_id": "",
+	"maxHistory": 10,
+	"dictators": ["<user tag here>"]
 }
